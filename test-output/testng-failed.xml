@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testClasses.BaseClass">
+        <methods>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- testClasses.BaseClass -->
+      <class name="testClasses.GoogleSearch_TestClass">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="googleSearch"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testClasses.GoogleSearch_TestClass -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
